@@ -1,0 +1,16 @@
+/* ID > Classes > atributos e pseudo-classes     Elementos > pseudo-elemento */
+/*
+Regra de aplicação: 
+1 - !important
+2 - style
+3 - empate
+4 - especificidade
+*/
+
+#p {
+    background: red;
+}
+
+.p {
+    background:yellow !important; /*força o navegador aplicar mesmo não estando na regra de aplicação
+}
