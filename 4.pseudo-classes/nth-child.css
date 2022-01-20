@@ -1,0 +1,28 @@
+/* ul li:nth-child(even){
+    background-color: blue;
+}
+ul li:nth-child(odd){
+    background-color: gray ;
+}
+ul li:nth-child(3n){
+    color: darkseagreen ;
+} */
+
+ul li::after {
+    content: ' :  ';
+    background: darkslateblue;
+    color: white;
+}
+p::first-letter {
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+p::selection {
+    background: black;
+    color: white;
+}
+::placeholder {
+    color: tomato;
+}
