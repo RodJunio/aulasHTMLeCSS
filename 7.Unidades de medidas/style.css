@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.pai {
+    height: 100vh;
+    background: yellow;
+    overflow: hidden;
+}
+
+p {
+    font-size: 1.6rem; /*referente a font-size do html*/
+}
+
+.color-one {
+    background: turquoise;
+}
+
+.color-two {
+    background: violet;
+}
