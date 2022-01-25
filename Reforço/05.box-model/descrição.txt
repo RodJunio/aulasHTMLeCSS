@@ -1,0 +1,19 @@
+Box Model
+
+-Content (conteúdo)
+Define a largura inicial da caixa (salvo elementos de bloco)
+
+-Padding (preenchimento)
+Separa o conteúdo das bordas da caixa. É a margem interna.
+
+-Border (borda)
+Define bordas para a caixa
+
+-Margin (margem)
+Define a distância entre uma caixa e outra
+
+-Width (largura)
+A largura total da caixa, por padrão é o somatório do conteúdo + padding (left/rigth) + border (left/rigth)
+
+-Heigth (altura)
+A largura total da caixa, por padrão é o somatório do conteúdo + padding (top/bottom) + border (top/bottom)
