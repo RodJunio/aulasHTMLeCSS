@@ -1,32 +1,29 @@
 body{
-    font-family: Arial;
-    margin: 50px;
+    font-family: Arial; /* muda a fonte de todo o projeto*/
+    margin: 50px; /*coloca uma margem em todo o projeto*/
 }
 h2 {
-    margin: 0;
+    margin: 0; /*tira a margem do títilo 2*/
 }
 }
 h1 {
-    text-align: center;
-}
-p {
-    color: #b2b2b2;
+    text-align: center; /*Centraliza o título 1*/
 }
 .item {
-    padding: 30px;
-    margin: 20px;
-    color: white;
-    background: #111;
-    border-radius: 4px;
+    padding: 30px; /* coloca um esoaço interno de cada box*/
+    margin: 20px; /* afasta uma box de outra*/
+    color: white; /*Como o background está preto precisa mudar a cor da fonte para branco*/
+    background: #111; /*cor de fundo de cada box*/
+    border-radius: 4px; /* pontas Arredondadas na box*/
 }
 span {
-    color: #febe01;
+    color: #febe01; /*cor para o span*/
 }
 
 button {
-    color: #332200;
-    background: #febe01;
-    padding: 10px;
-    border-radius: 4px;
-    border: none;
+    color: #332200; /*cor do texto do botão*/
+    background: #febe01; /*cor de fundo do botão*/
+    padding: 10px; /* espaço interno do botão*/
+    border-radius: 4px; /* borda arredondada*/
+    border: none; /* tira a borda padrão do botão*/
 }
