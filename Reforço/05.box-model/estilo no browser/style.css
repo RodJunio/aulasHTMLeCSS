@@ -1,0 +1,7 @@
+body {
+    color: seagreen; /*Incluir uma cor no body faz com que todos os outros elentos herdem a cor do body. */
+}
+
+a {
+    color: inherit; /*Agora esse elento que já tinha uma color padrão vai herdar do body outra cor que já foi pré-definida*/
+}  

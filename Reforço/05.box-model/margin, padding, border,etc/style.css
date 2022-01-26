@@ -1,0 +1,19 @@
+div {
+    background: #aaa;
+    /*width: auto;  o auto pega o tamanho total do elemento pai*/
+    width: 140px; /* largura*/
+    height: 80px; /* altura*/
+    padding: 20px; /* o padding vai somar com a largura e a altura, nesse caso vai para 180px no width e 120px no height*/
+    border: 10px solid #111; /* a borda também faz soma com os outros componentes, agora tem 200px de width e 140px de height (soma 10px de cada lado da borda)*/
+    margin: 30px; /*dá uma margem de 30px da extremidade da página*/
+}
+* {
+    margin: 0;
+}
+
+h1 {
+    background: #84e;
+    padding: 20px;
+    border: 4px solid #111;
+    margin: 40px; /* tem uma margem de 30px na div de cima, mas o que vai ser levado em consideração é a margin maior (que é a do h1 que tem 40px)*/
+}
