@@ -1,0 +1,14 @@
+span {
+    display: inline-block; /*O elemento gera uma caixa de elemento de bloco que fluirá com o conteúdo circundante, como se fosse uma única caixa embutida (se comportando como um elemento substituído)*/
+    background: #ddd;
+}
+
+span {
+    padding: 30px; /*para todos os lados*/
+    padding: 20px 40px; /*adiciona 20 para cima e para baixa, e adiciona 40 para direita e esquerda*/
+    padding: 40px 100px 200px 10px; /*ordem: Top - rigth - left - bottom*/
+
+    border: 10px solid black; /* para todos os lados*/
+    border-top: 20px solid blue;
+    border-width: 30px 60px; /*para cima e baixo 30px para os lados 60px*/
+}

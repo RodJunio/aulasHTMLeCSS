@@ -1,0 +1,11 @@
+img {
+    max-width: 100%; /*mantém a imagem do tamanho do pai (body)*/
+}
+
+.photo {
+    width: 150px; /*como a imagem tem baixa resolução diminuir o tamanho dela faz que a resolução melhore*/
+}
+
+.svg-png {
+    background: cyan;
+}

@@ -1,0 +1,61 @@
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.photo {
+    grid-column: 1/-1;  /*a grid vai expandir da primeira linha até a última*/
+}
+
+.descricao {
+    grid-column: 1/-1;
+}
+.comprar {
+    grid-column: 1/-1;
+}
+
+
+
+/*Estios Gerais*/
+
+
+body {
+    font-family: Arial;
+    margin: 40px;
+}
+
+h1,
+p {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1; /* Espaço entre linhas*/
+}
+
+p,
+span {
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.comprar {
+    background: #a8f;
+    padding: 10px 20px;
+    color: #103;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.preco {
+    background: #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
