@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    
+}
+h2,a {   
+    flex-wrap: wrap;
+    flex: 1;
+    text-decoration: none;
+    color: black;
+}
+p {
+    font-size: 18px;
+}
+
+img {
+    max-width: 400px;
+}
+.botão{
+    background: red;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+}
+.logo {
+    display: flex;
+    place-content: center;
+    margin: 50px;
+    background: #F8F8FF;
+    text-decoration: none;
+}
+
+.menu {
+    font-size: 12px;
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    place-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.descricao {
+    margin-top: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    place-self: start;
+    align-items: center;
+    text-align: right;
+}
+.info {
+    display: grid;
+    gap: 20px;
+    place-items: end;
+}
+
+

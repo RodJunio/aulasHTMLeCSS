@@ -1,20 +1,18 @@
 .grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: start;
 }
-
-.photo {
-    grid-column: 1/-1;  /*a grid vai expandir da primeira linha até a última*/
+.titulo {
+    grid-column: 1 / -1;
 }
-
-.descricao {
-    grid-column: 1/-1;
+.info {
+    place-self: start;
+    display: grid;
+    place-items: start;
+    gap: 20px;
 }
-.comprar {
-    grid-column: 1/-1;
-}
-
 
 
 /*Estios Gerais*/
