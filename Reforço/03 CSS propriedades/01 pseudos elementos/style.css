@@ -1,0 +1,20 @@
+.lista {
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+
+li {
+    list-style: none;
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(blue, white);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    align-items: center;
+    margin-right: 0.5rem;
+    border: 0.1rem solid blueviolet;
+}
