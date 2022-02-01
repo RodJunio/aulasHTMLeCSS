@@ -43,7 +43,7 @@ p {
     padding: 0.9rem 1.8rem;
     border-radius: 0.25rem;
     color: #000000;
-    text-transform: uppercase;   
+    text-transform: uppercase;
 }
 
 .menu li a:hover{
@@ -57,6 +57,7 @@ p {
     grid-template-columns: 1fr 1fr;
     max-width: 62.5rem;
 }
+
 
 .introducao {
     background: #fff;
@@ -82,6 +83,11 @@ p {
     position: absolute;
     margin-right: -2rem;
     margin-top: 1.5rem;
+}
+
+.introducao-cover img{
+    object-fit: cover;
+    height: 100%;
 }
 
 .botao {
@@ -119,7 +125,7 @@ p {
 .vantagens-item:hover{
     border-left: 3px solid #e21;
 }
-ul li:nth-child(odd) {
+.vantagens-item ul li:nth-child(odd) {
     background: #e7e7e7;
 }
 
@@ -133,4 +139,86 @@ ul li:nth-child(odd) {
     text-align: center;
     padding: 40px;
     box-sizing: border-box;
+}
+
+/* @media (max-width: 600px){
+    * {
+        padding: 0;
+        margin: 0;
+        gap: 0;
+    }
+    .menu{
+        display: grid;
+    }
+    .menu li{
+        display: inline;
+        margin: auto;
+    }
+
+    .menu li a {
+        display: block;
+        padding:auto 100vh;
+    }
+
+    .conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 60ch;
+    }
+    .introducao {
+        text-align: center;
+        justify-items: center;
+    }
+    
+    
+    .introducao::before {
+        content: none;
+    }
+
+    img{
+        max-width: 100%;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .vantagens {
+        text-align: left;
+    }
+    .subtitulo {
+        text-align: center;
+    }
+} */
+
+@media (max-width: 1000px) {
+    
+    
+    .conteudo-vantagem {
+        grid-template-columns: 1fr;
+    }
+    .subtitulo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .header{
+        gap: 30px;
+    }
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+    .introducao{
+        text-align: left;
+        justify-items: start;
+    }
+    .introducao::before {
+        display: none;
+    }
+    .subtitulo {
+        font-size: 3rem;
+    }
 }
