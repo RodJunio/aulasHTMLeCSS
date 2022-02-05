@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="./">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" > 
+        <!-- o for e o name vai se relacionar, o nome mostra na o tipo de dado na barra de pesquisa -->
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha">    
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <!-- o required obriga o usuário a preencher esse imput -->
+        <label for="number">Idade</label>
+        <input type="number" id="number" name="number" required>
+        <!-- não permite digitar outra coisa além de número -->
+        <div class="checkbox">
+            <input type="checkbox" id="ckeckbox" name="checkbox">
+            <label for="checkbox">Aceito os termos de uso</label>
+        </div>
+        
+        <label for="saida">Saída do Hotel</label>
+        <input type="date" id="saida" name="saida" required>
+        <button>Enviar</button>
+    </form>   
+</body>
+</html>

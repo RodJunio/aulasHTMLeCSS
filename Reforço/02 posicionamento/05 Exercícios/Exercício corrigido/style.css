@@ -1,11 +1,32 @@
+:root {
+    --cor-primaria: #e21;
+    --cor-primaria-escura: #900;
+    --fundo-1: #f7f7f7;
+    --fundo-2: #ffffff;
+    --texto: #000000;
+    --subtitulo: rgba(0, 0, 0, 0.2);
+    --onda: url(../imagens/onda-clara.svg);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --fundo-1: #111111;
+        --fundo-2: #000000;
+        --texto: #ffffff;
+        --subtitulo: rgba(255, 255, 255, 0.2);
+        --onda: url(../imagens/onda-escura.svg);
+    }
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: #f7f7f7;
+    background: var(--fundo-1);
     display: grid;
     gap: 3.5rem;
     justify-items: center;
     margin-top:3.5rem;
+    color: var(--texto);
 }
 
 img {
@@ -39,16 +60,16 @@ p {
 }
 
 .menu li a {
-    background: #fff;
+    background: var(--fundo-2);
     padding: 0.9rem 1.8rem;
     border-radius: 0.25rem;
-    color: #000000;
+    color: var(--texto);
     text-transform: uppercase;
 }
 
 .menu li a:hover{
     border: 2px solid;
-    border-image: linear-gradient(45deg, #e21, black) 1;
+    border-image: linear-gradient(45deg, var(--cor-primaria), var(--texto)) 1;
 }
 
 
@@ -60,7 +81,7 @@ p {
 
 
 .introducao {
-    background: #fff;
+    background: var(--fundo-2);
     padding: 2.5rem;
     text-align: right;
     position: relative;
@@ -79,7 +100,7 @@ p {
     display: inline-block;
     width: 3.75rem;
     height: 0.15rem;
-    background: #e21;
+    background: var(--cor-primaria);
     position: absolute;
     margin-right: -2rem;
     margin-top: 1.5rem;
@@ -91,28 +112,28 @@ p {
 }
 
 .botao {
-    background: #e21;
-    color: #fff;
+    background: var(--cor-primaria);
+    color: #ffffff;
     padding: 0.9rem 1.8rem;
     border-radius:0.25rem;
     text-transform: uppercase;
 }
 .botao:hover{
-    background: brown;
+    background: var(--cor-primaria-escura);
 }
 
 .subtitulo{
-    background: url(../imagens/onda.svg);
+    background: var(--onda);
     font-size: 4rem;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.2);
+    color: var(--subtitulo);
     text-align: right;
     padding: 2.5rem;
     align-self: center;
 }
 
 .vantagens {
-    background: #fff;
+    background: var(--fundo-2);
     padding: 2.5rem;
 }
 
@@ -123,10 +144,10 @@ p {
     padding: 20px;
 }
 .vantagens-item:hover{
-    border-left: 3px solid #e21;
+    border-left: 3px solid var(--cor-primaria);
 }
 .vantagens-item ul li:nth-child(odd) {
-    background: #e7e7e7;
+    background: var(--fundo1);
 }
 
 .vantagens-item p {
@@ -134,60 +155,12 @@ p {
 }
 
 .rodape {
-    background: #fff;
+    background: var(--fundo-2);
     width: 100%;
     text-align: center;
     padding: 40px;
     box-sizing: border-box;
 }
-
-/* @media (max-width: 600px){
-    * {
-        padding: 0;
-        margin: 0;
-        gap: 0;
-    }
-    .menu{
-        display: grid;
-    }
-    .menu li{
-        display: inline;
-        margin: auto;
-    }
-
-    .menu li a {
-        display: block;
-        padding:auto 100vh;
-    }
-
-    .conteudo {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 60ch;
-    }
-    .introducao {
-        text-align: center;
-        justify-items: center;
-    }
-    
-    
-    .introducao::before {
-        content: none;
-    }
-
-    img{
-        max-width: 100%;
-        align-items: center;
-        margin-top: 1rem;
-    }
-
-    .vantagens {
-        text-align: left;
-    }
-    .subtitulo {
-        text-align: center;
-    }
-} */
 
 @media (max-width: 1000px) {
     

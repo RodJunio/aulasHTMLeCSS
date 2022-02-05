@@ -1,0 +1,35 @@
+body {
+    font-size: 1.2rem;
+}
+label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+input {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+button {
+    margin-top: 30px;
+    display: block;
+}
+.checkbox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-top: 10px;
+}
+
+.checkbox label {
+    display: inline-block;
+    margin: 0;
+    align-items: center;
+}
+
+.checkbox input {
+    margin: 0%;
+    width: 20px;
+    height: 20px;
+}
